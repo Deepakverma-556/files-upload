@@ -13,6 +13,7 @@ const WelcomeForm = () => {
 
   const [formValue, setFormValue] = useState(initialState);
   const router = useRouter();
+
   function handleClick(e: FormEvent) {
     e.preventDefault();
     localStorage.setItem("formvalue", JSON.stringify(formValue));

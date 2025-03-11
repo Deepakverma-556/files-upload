@@ -1,7 +1,7 @@
-interface DownArrow {
+interface iconProp {
   myClass?: string;
 }
-export const DownArrow = ({ myClass }: DownArrow) => (
+export const DownArrow = ({ myClass }: iconProp) => (
   <svg
     className={`${myClass}`}
     width="14"
@@ -19,7 +19,7 @@ export const DownArrow = ({ myClass }: DownArrow) => (
     />
   </svg>
 );
-export const UploadIcon = ({ myClass }: DownArrow) => (
+export const UploadIcon = () => (
   <svg
     width="22"
     height="21"
@@ -85,8 +85,9 @@ export const RightTik = () => (
   </svg>
 );
 
-export const Complexity = () => (
+export const Complexity = ({ myClass }: iconProp) => (
   <svg
+    className={`${myClass}`}
     width="60"
     height="60"
     viewBox="0 0 60 60"
@@ -101,8 +102,9 @@ export const Complexity = () => (
   </svg>
 );
 
-export const Machines = () => (
+export const Machines = ({ myClass }: iconProp) => (
   <svg
+    className={`${myClass}`}
     width="60"
     height="60"
     viewBox="0 0 60 60"
@@ -120,8 +122,8 @@ export const Machines = () => (
   </svg>
 );
 
-export const Pars = () => (
-  <svg
+export const Pars = ({myClass}:iconProp) => (
+  <svg className={`${myClass}`}
     width="60"
     height="60"
     viewBox="0 0 60 60"
