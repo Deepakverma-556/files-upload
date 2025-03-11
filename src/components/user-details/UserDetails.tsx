@@ -26,7 +26,7 @@ function UserDetails() {
   function submitHandler() {
     router.push(`/read-process`);
     localStorage.removeItem("uploadedFile");
-  }
+    }
 
   return (
     <div className="bg-customWhite">
@@ -90,7 +90,7 @@ function UserDetails() {
                 <button
                   onClick={() => updateUrl(obj.title)}
                   key={i}
-                  className="bg-white cursor-pointer flex justify-between items-center py-3 px-4 rounded-lg"
+                  className={`hover:border-customRed border border-white bg-white cursor-pointer flex justify-between items-center py-3 px-4 rounded-lg`}
                 >
                   <div className="flex gap-4 items-center">
                     <div className="h-10 w-10 rounded-full flex items-center justify-center bg-lightRed">
