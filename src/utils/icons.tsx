@@ -122,8 +122,9 @@ export const Machines = ({ myClass }: iconProp) => (
   </svg>
 );
 
-export const Pars = ({myClass}:iconProp) => (
-  <svg className={`${myClass}`}
+export const Pars = ({ myClass }: iconProp) => (
+  <svg
+    className={`${myClass}`}
     width="60"
     height="60"
     viewBox="0 0 60 60"

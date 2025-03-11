@@ -14,9 +14,9 @@ export const metadata: Metadata = {
         width: 800,
         height: 600,
         url: "/meta-img.png",
-        alt:"meta-img"
-      }
-    ]
+        alt: "meta-img",
+      },
+    ],
   },
 };
 
@@ -27,11 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }

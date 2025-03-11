@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import WelcomeForm from "@/components/WelcomeForm";
 
 export default function Home() {
   return (
     <>
-      <WelcomeForm/>
+      <WelcomeForm />
     </>
   );
 }
