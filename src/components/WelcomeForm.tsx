@@ -58,7 +58,7 @@ const WelcomeForm = () => {
         />
         <button
           type="submit"
-          className="bg-white flex max-w-max mx-auto px-4 py-1 rounded-xl cursor-pointer"
+          className="bg-white flex max-w-max mx-auto px-4 py-1 rounded-xl cursor-pointer transition-all duration-300 hover:bg-gray-600 hover:text-white"
         >
           Submit
         </button>
