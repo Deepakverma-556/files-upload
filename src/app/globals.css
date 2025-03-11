@@ -8,4 +8,8 @@
 @theme {
   --font-syne: "Syne", sans-serif;
   --color-customGray: rgba(27, 27, 27, 1);
+  --color-lightGray: rgba(0, 0, 0, 0.08);
+  --color-customRed: rgba(237, 28, 36, 1);
+  --color-customWhite: rgba(246, 246, 246, 1);
+  --color-lightRed: rgba(255, 241, 242,1);
 }
