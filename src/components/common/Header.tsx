@@ -1,8 +1,20 @@
 import { DownArrow } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 function Header() {
+   const [userData, setUserData] = useState<{
+     firstName: string;
+     lastName: string;
+   } | null>(null);
+
+   useEffect(() => {
+     const storedData = localStorage.getItem("formvalue");
+     if (storedData) {
+       setUserData(JSON.parse(storedData));
+     }
+   }, []);
   return (
     <div className="max-w-[1172px] mx-auto px-4 justify-between flex w-full py-4">
       <div className="flex items-center gap-[10px] max-sm:gap-1">
@@ -30,10 +42,10 @@ function Header() {
         />
         <div className="pl-[7px] pr-[13px] max-sm:pr-0">
           <p className="!font-syne font-medium leading-[100%] max-sm:text-sm">
-            Jhon doe
+            {userData ? `${userData.firstName}` : "Jhon doe"}
           </p>
           <p className="leading-[100%] text-sm max-sm:text-xs text-black/70 pt-[1px]">
-            Admin
+            {userData ? `${userData.lastName}` : "Admin"}
           </p>
         </div>
         <DownArrow myClass="max-sm:hidden" />
