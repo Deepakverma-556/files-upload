@@ -42,10 +42,12 @@ function Header() {
         />
         <div className="pl-[7px] pr-[13px] max-sm:pr-0">
           <p className="!font-syne font-medium leading-[100%] max-sm:text-sm">
-            {userData ? `${userData.firstName}` : "Jhon doe"}
+            {userData
+              ? `${userData.firstName} ${userData.lastName}`
+              : "Jhon doe"}
           </p>
           <p className="leading-[100%] text-sm max-sm:text-xs text-black/70 pt-[1px]">
-            {userData ? `${userData.lastName}` : "Admin"}
+            Admin
           </p>
         </div>
         <DownArrow myClass="max-sm:hidden" />
